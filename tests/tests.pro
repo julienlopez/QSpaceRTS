@@ -12,4 +12,5 @@ LIBS += -lQSpaceRTS
 INCLUDEPATH += $$QSPACERTS_LIB
 
 SOURCES += main.cpp \
-    test_planetarysystem.cpp
+    test_planetarysystem.cpp \
+    test_planet.cpp

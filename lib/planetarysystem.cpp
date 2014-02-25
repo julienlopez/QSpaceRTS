@@ -5,7 +5,12 @@ PlanetarySystem::PlanetarySystem(std::string name_, const utils::Point& p): m_na
 
 bool PlanetarySystem::empty() const
 {
-    return true;
+    return m_planets.empty();
+}
+
+std::size_t PlanetarySystem::count() const
+{
+    return m_planets.size();
 }
 
 const std::string& PlanetarySystem::name() const
@@ -16,4 +21,9 @@ const std::string& PlanetarySystem::name() const
 const utils::Point& PlanetarySystem::position() const
 {
     return m_position;
+}
+
+void PlanetarySystem::add(Planet&& planet)
+{
+    m_planets.push_back(std::move(planet));
 }

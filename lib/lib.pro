@@ -6,7 +6,9 @@ TEMPLATE = lib
 include (../QSpaceRTS.pri)
 
 SOURCES += \
-    planetarysystem.cpp
+    planetarysystem.cpp \
+    planet.cpp \
+    orbit.cpp
 
 HEADERS  += \
     utils/namespace_utils.hpp \
@@ -15,4 +17,6 @@ HEADERS  += \
     utils/noninstantiable.hpp \
     utils/make_unique.hpp \
     planetarysystem.hpp \
-    utils/point.hpp
+    utils/point.hpp \
+    planet.hpp \
+    orbit.hpp
