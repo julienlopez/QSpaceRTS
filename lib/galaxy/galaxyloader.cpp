@@ -6,16 +6,12 @@
 
 #include <cassert>
 
-#include <QDebug>
+BEGIN_NAMESPACE_GALAXY
 
 Planet GalaxyLoader::parsePlanet(const std::string& json)
 {
     QJsonParseError error;
     auto doc = QJsonDocument::fromJson(QString::fromStdString(json).toUtf8(), &error);
-    if(error.error != QJsonParseError::NoError)
-    {
-        qDebug() << error.errorString();
-    }
     assert(doc.isObject());
     return parsePlanet(doc.object());
 }
@@ -58,3 +54,5 @@ Orbit GalaxyLoader::parseOrbit(const QJsonObject& object)
 
     return Orbit(periapsis, apoapsis, argument);
 }
+
+END_NAMESPACE_GALAXY

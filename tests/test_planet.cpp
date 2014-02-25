@@ -1,6 +1,8 @@
 #include <gtest/gtest.h>
 
-#include <planet.hpp>
+#include <galaxy/planet.hpp>
+
+using namespace Galaxy;
 
 struct TestPlanet : public ::testing::Test
 {

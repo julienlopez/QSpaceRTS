@@ -9,6 +9,8 @@
 #include <string>
 #include <vector>
 
+BEGIN_NAMESPACE_GALAXY
+
 class PlanetarySystem : private utils::noncopiable
 {
 public:
@@ -31,5 +33,7 @@ private:
     using container_planet = std::vector<Planet>;
     container_planet m_planets;
 };
+
+END_NAMESPACE_GALAXY
 
 #endif // PLANETARYSYTEM_HPP

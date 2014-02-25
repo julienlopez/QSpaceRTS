@@ -1,5 +1,7 @@
 #include "planet.hpp"
 
+BEGIN_NAMESPACE_GALAXY
+
 Planet::Planet(std::string name_, const Orbit& orbit_): m_name(name_), m_orbit(orbit_)
 {}
 
@@ -12,3 +14,5 @@ const Orbit& Planet::orbit() const
 {
     return m_orbit;
 }
+
+END_NAMESPACE_GALAXY

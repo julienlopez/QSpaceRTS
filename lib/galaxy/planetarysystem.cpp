@@ -1,5 +1,7 @@
 #include "planetarysystem.hpp"
 
+BEGIN_NAMESPACE_GALAXY
+
 PlanetarySystem::PlanetarySystem(std::string name_, const utils::Point& p): m_name(std::move(name_)), m_position(p)
 {}
 
@@ -27,3 +29,5 @@ void PlanetarySystem::add(Planet&& planet)
 {
     m_planets.push_back(std::move(planet));
 }
+
+END_NAMESPACE_GALAXY

@@ -7,6 +7,8 @@
 
 #include <string>
 
+BEGIN_NAMESPACE_GALAXY
+
 class Planet : private utils::noncopiable
 {
 public:
@@ -19,5 +21,7 @@ private:
     std::string m_name;
     Orbit m_orbit;
 };
+
+END_NAMESPACE_GALAXY
 
 #endif // PLANET_HPP

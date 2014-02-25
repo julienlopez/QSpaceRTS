@@ -1,7 +1,9 @@
 #include <gtest/gtest.h>
 
-#include <planet.hpp>
-#include <galaxyloader.hpp>
+#include <galaxy/planet.hpp>
+#include <galaxy/galaxyloader.hpp>
+
+using namespace Galaxy;
 
 TEST(TestGalaxyLoader, LoadPlanet)
 {
