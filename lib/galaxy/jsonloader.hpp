@@ -14,7 +14,7 @@ BEGIN_NAMESPACE_GALAXY
 class Planet;
 class Orbit;
 
-class GalaxyLoader : private utils::noninstantiable
+class JsonLoader : private utils::noninstantiable
 {
 public:
     static Planet parsePlanet(const std::string& json);

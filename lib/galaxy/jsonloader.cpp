@@ -1,4 +1,4 @@
-#include "galaxyloader.hpp"
+#include "jsonloader.hpp"
 #include "planet.hpp"
 
 #include <QJsonObject>
@@ -8,7 +8,7 @@
 
 BEGIN_NAMESPACE_GALAXY
 
-Planet GalaxyLoader::parsePlanet(const std::string& json)
+Planet JsonLoader::parsePlanet(const std::string& json)
 {
     QJsonParseError error;
     auto doc = QJsonDocument::fromJson(QString::fromStdString(json).toUtf8(), &error);
@@ -16,7 +16,7 @@ Planet GalaxyLoader::parsePlanet(const std::string& json)
     return parsePlanet(doc.object());
 }
 
-Planet GalaxyLoader::parsePlanet(const QJsonObject& object)
+Planet JsonLoader::parsePlanet(const QJsonObject& object)
 {
     assert(!object.isEmpty());
 
@@ -33,7 +33,7 @@ Planet GalaxyLoader::parsePlanet(const QJsonObject& object)
     return Planet(name, parseOrbit(obj));
 }
 
-Orbit GalaxyLoader::parseOrbit(const QJsonObject& object)
+Orbit JsonLoader::parseOrbit(const QJsonObject& object)
 {
     assert(!object.isEmpty());
 

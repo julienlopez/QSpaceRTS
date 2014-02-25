@@ -1,14 +1,14 @@
 #include <gtest/gtest.h>
 
 #include <galaxy/planet.hpp>
-#include <galaxy/galaxyloader.hpp>
+#include <galaxy/jsonloader.hpp>
 
 using namespace Galaxy;
 
 TEST(TestGalaxyLoader, LoadPlanet)
 {
     std::string json = "{\"name\":\"Planet1\", \"orbit\":{\"periapsis\": 21.4, \"apoapsis\": 12, \"argument\" : 0}}";
-    auto planet = GalaxyLoader::parsePlanet(json);
+    auto planet = JsonLoader::parsePlanet(json);
     ASSERT_EQ("Planet1", planet.name());
     const auto& orbit = planet.orbit();
     ASSERT_EQ(21.4, orbit.periapsis());

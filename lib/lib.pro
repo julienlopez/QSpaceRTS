@@ -9,7 +9,7 @@ SOURCES += \
     galaxy/planetarysystem.cpp \
     galaxy/planet.cpp \
     galaxy/orbit.cpp \
-    galaxy/galaxyloader.cpp
+    galaxy/jsonloader.cpp
 
 HEADERS  += \
     utils/namespace_utils.hpp \
@@ -21,5 +21,5 @@ HEADERS  += \
     utils/point.hpp \
     galaxy/planet.hpp \
     galaxy/orbit.hpp \
-    galaxy/galaxyloader.hpp \
-    galaxy/namespace_galaxy.hpp
+    galaxy/namespace_galaxy.hpp \
+    galaxy/jsonloader.hpp
