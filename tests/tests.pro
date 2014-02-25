@@ -14,4 +14,4 @@ INCLUDEPATH += $$QSPACERTS_LIB
 SOURCES += main.cpp \
     test_planetarysystem.cpp \
     test_planet.cpp \
-    test_planetloader.cpp
+    test_galaxyloader.cpp

@@ -9,7 +9,7 @@ SOURCES += \
     planetarysystem.cpp \
     planet.cpp \
     orbit.cpp \
-    planetloader.cpp
+    galaxyloader.cpp
 
 HEADERS  += \
     utils/namespace_utils.hpp \
@@ -21,4 +21,4 @@ HEADERS  += \
     utils/point.hpp \
     planet.hpp \
     orbit.hpp \
-    planetloader.hpp
+    galaxyloader.hpp

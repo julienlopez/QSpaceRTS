@@ -1,4 +1,4 @@
-#include "planetloader.hpp"
+#include "galaxyloader.hpp"
 #include "planet.hpp"
 
 #include <QJsonObject>
@@ -8,7 +8,7 @@
 
 #include <QDebug>
 
-Planet PlanetLoader::fromJson(const std::string& json)
+Planet GalaxyLoader::parsePlanet(const std::string& json)
 {
     QJsonParseError error;
     auto doc = QJsonDocument::fromJson(QString::fromStdString(json).toUtf8(), &error);
@@ -17,10 +17,10 @@ Planet PlanetLoader::fromJson(const std::string& json)
         qDebug() << error.errorString();
     }
     assert(doc.isObject());
-    return fromJson(doc.object());
+    return parsePlanet(doc.object());
 }
 
-Planet PlanetLoader::fromJson(const QJsonObject& object)
+Planet GalaxyLoader::parsePlanet(const QJsonObject& object)
 {
     assert(!object.isEmpty());
 
@@ -37,7 +37,7 @@ Planet PlanetLoader::fromJson(const QJsonObject& object)
     return Planet(name, parseOrbit(obj));
 }
 
-Orbit PlanetLoader::parseOrbit(const QJsonObject& object)
+Orbit GalaxyLoader::parseOrbit(const QJsonObject& object)
 {
     assert(!object.isEmpty());
 
