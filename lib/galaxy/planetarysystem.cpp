@@ -30,4 +30,14 @@ void PlanetarySystem::add(Planet&& planet)
     m_planets.push_back(std::move(planet));
 }
 
+auto PlanetarySystem::begin() const -> const_iterator
+{
+    return m_planets.begin();
+}
+
+auto PlanetarySystem::end() const -> const_iterator
+{
+    return m_planets.end();
+}
+
 END_NAMESPACE_GALAXY

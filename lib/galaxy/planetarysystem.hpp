@@ -14,6 +14,9 @@ BEGIN_NAMESPACE_GALAXY
 class PlanetarySystem : private utils::noncopiable
 {
 public:
+    using container_planet = std::vector<Planet>;
+    using const_iterator = container_planet::const_iterator;
+
     PlanetarySystem(std::string name_, const utils::Point& p);
 
     bool empty() const;
@@ -26,11 +29,13 @@ public:
 
     void add(Planet&& planet);
 
+    const_iterator begin() const;
+    const_iterator end() const;
+
 private:
     std::string m_name;
     utils::Point m_position;
 
-    using container_planet = std::vector<Planet>;
     container_planet m_planets;
 };
 
