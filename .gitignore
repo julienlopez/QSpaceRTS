@@ -1,7 +1,9 @@
 bin
-obj
+obj_lib
+obj_gui
 obj_tests
-moc
+moc_lib
+moc_gui
 moc_tests
 
 QSpaceRTS.pro.user

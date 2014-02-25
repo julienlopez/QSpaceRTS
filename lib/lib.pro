@@ -5,6 +5,9 @@ TEMPLATE = lib
 
 include (../QSpaceRTS.pri)
 
+OBJECTS_DIR = $$QSPACERTS_OBJ_LIB
+MOC_DIR= $$QSPACERTS_MOC_LIB
+
 SOURCES += \
     galaxy/planetarysystem.cpp \
     galaxy/planet.cpp \

@@ -13,6 +13,9 @@ TEMPLATE = app
 
 include (../QSpaceRTS.pri)
 
+OBJECTS_DIR = $$QSPACERTS_OBJ_GUI
+MOC_DIR= $$QSPACERTS_MOC_GUI
+
 SOURCES += main.cpp\
         mainwindow.cpp
 
