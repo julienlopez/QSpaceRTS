@@ -12,6 +12,6 @@ LIBS += -lQSpaceRTS
 INCLUDEPATH += $$QSPACERTS_LIB
 
 SOURCES += main.cpp \
-    test_planetarysystem.cpp \
-    test_planet.cpp \
-    test_galaxyloader.cpp
+    galaxy/test_planetarysystem.cpp \
+    galaxy/test_planet.cpp \
+    galaxy/test_jsonloader.cpp
