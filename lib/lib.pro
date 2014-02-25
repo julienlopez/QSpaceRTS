@@ -14,4 +14,5 @@ HEADERS  += \
     utils/noncopiable.hpp \
     utils/noninstantiable.hpp \
     utils/make_unique.hpp \
-    planetarysystem.hpp
+    planetarysystem.hpp \
+    utils/point.hpp
