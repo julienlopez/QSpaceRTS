@@ -2,17 +2,23 @@
 #define PLANETARYSYTEM_HPP
 
 #include "utils/point.hpp"
+#include "utils/noncopiable.hpp"
 
-class PlanetarySystem
+#include <string>
+
+class PlanetarySystem : public utils::noncopiable
 {
 public:
-    PlanetarySystem(const utils::Point& p);
+    PlanetarySystem(std::string name_, const utils::Point& p);
 
     bool empty() const;
+
+    const std::string& name() const;
 
     const utils::Point& position() const;
 
 private:
+    std::string m_name;
     utils::Point m_position;
 };
 
