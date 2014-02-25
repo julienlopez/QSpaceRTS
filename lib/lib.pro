@@ -8,7 +8,8 @@ include (../QSpaceRTS.pri)
 SOURCES += \
     planetarysystem.cpp \
     planet.cpp \
-    orbit.cpp
+    orbit.cpp \
+    planetloader.cpp
 
 HEADERS  += \
     utils/namespace_utils.hpp \
@@ -19,4 +20,5 @@ HEADERS  += \
     planetarysystem.hpp \
     utils/point.hpp \
     planet.hpp \
-    orbit.hpp
+    orbit.hpp \
+    planetloader.hpp
