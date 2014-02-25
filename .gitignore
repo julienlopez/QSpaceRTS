@@ -1,0 +1,7 @@
+bin
+obj
+obj_tests
+moc
+moc_tests
+
+QSpaceRTS.pro.user
