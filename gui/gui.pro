@@ -22,6 +22,10 @@ OBJECTS_DIR = $$QSPACERTS_OBJ_GUI
 MOC_DIR= $$QSPACERTS_MOC_GUI
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    screen.cpp \
+    galaxyscene.cpp
 
-HEADERS  += mainwindow.hpp
+HEADERS  += mainwindow.hpp \
+    screen.hpp \
+    galaxyscene.hpp
