@@ -27,4 +27,5 @@ HEADERS  += \
     universe/orbit.hpp \
     universe/jsonloader.hpp \
     universe/galaxy.hpp \
-    universe/namespace_universe.hpp
+    universe/namespace_universe.hpp \
+    utils/uniquecontainerwithname.hpp
