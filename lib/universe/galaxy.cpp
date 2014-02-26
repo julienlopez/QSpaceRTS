@@ -1,6 +1,6 @@
 #include "galaxy.hpp"
 
-BEGIN_NAMESPACE_GALAXY
+BEGIN_NAMESPACE_UNIVERSE
 
 Galaxy::Galaxy(std::string name_): m_name(std::move(name_))
 {}
@@ -35,4 +35,4 @@ auto Galaxy::end() const -> const_iterator
     return m_systems.end();
 }
 
-END_NAMESPACE_GALAXY
+END_NAMESPACE_UNIVERSE

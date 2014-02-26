@@ -1,8 +1,0 @@
-#ifndef NAMESPACE_GALAXY_HPP
-#define NAMESPACE_GALAXY_HPP
-
-#define BEGIN_NAMESPACE_GALAXY namespace Galaxy {
-
-#define END_NAMESPACE_GALAXY }
-
-#endif // NAMESPACE_GALAXY_HPP

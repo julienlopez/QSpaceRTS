@@ -1,6 +1,6 @@
 #include "planetarysystem.hpp"
 
-BEGIN_NAMESPACE_GALAXY
+BEGIN_NAMESPACE_UNIVERSE
 
 PlanetarySystem::PlanetarySystem(std::string name_, const utils::Point& p): m_name(std::move(name_)), m_position(p)
 {}
@@ -40,4 +40,4 @@ auto PlanetarySystem::end() const -> const_iterator
     return m_planets.end();
 }
 
-END_NAMESPACE_GALAXY
+END_NAMESPACE_UNIVERSE

@@ -8,7 +8,7 @@
 #include <string>
 #include <vector>
 
-BEGIN_NAMESPACE_GALAXY
+BEGIN_NAMESPACE_UNIVERSE
 
 class Galaxy : private utils::noncopiable
 {
@@ -34,6 +34,6 @@ private:
     container_systems m_systems;
 };
 
-END_NAMESPACE_GALAXY
+END_NAMESPACE_UNIVERSE
 
 #endif // GALAXY_HPP

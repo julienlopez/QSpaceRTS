@@ -1,9 +1,9 @@
 #ifndef ORBIT_HPP
 #define ORBIT_HPP
 
-#include "namespace_galaxy.hpp"
+#include "namespace_universe.hpp"
 
-BEGIN_NAMESPACE_GALAXY
+BEGIN_NAMESPACE_UNIVERSE
 
 /**
  * @brief The Orbit class describes orbital informations about an object.
@@ -25,6 +25,6 @@ private:
     double m_argument;
 };
 
-END_NAMESPACE_GALAXY
+END_NAMESPACE_UNIVERSE
 
 #endif // ORBIT_HPP

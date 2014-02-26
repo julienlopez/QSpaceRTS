@@ -9,11 +9,11 @@ OBJECTS_DIR = $$QSPACERTS_OBJ_LIB
 MOC_DIR= $$QSPACERTS_MOC_LIB
 
 SOURCES += \
-    galaxy/planetarysystem.cpp \
-    galaxy/planet.cpp \
-    galaxy/orbit.cpp \
-    galaxy/jsonloader.cpp \
-    galaxy/galaxy.cpp
+    universe/planetarysystem.cpp \
+    universe/planet.cpp \
+    universe/orbit.cpp \
+    universe/jsonloader.cpp \
+    universe/galaxy.cpp
 
 HEADERS  += \
     utils/namespace_utils.hpp \
@@ -21,10 +21,10 @@ HEADERS  += \
     utils/noncopiable.hpp \
     utils/noninstantiable.hpp \
     utils/make_unique.hpp \
-    galaxy/planetarysystem.hpp \
+    universe/planetarysystem.hpp \
     utils/point.hpp \
-    galaxy/planet.hpp \
-    galaxy/orbit.hpp \
-    galaxy/namespace_galaxy.hpp \
-    galaxy/jsonloader.hpp \
-    galaxy/galaxy.hpp
+    universe/planet.hpp \
+    universe/orbit.hpp \
+    universe/jsonloader.hpp \
+    universe/galaxy.hpp \
+    universe/namespace_universe.hpp

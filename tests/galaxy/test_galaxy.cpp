@@ -1,12 +1,12 @@
 #include <gtest/gtest.h>
 
-#include <galaxy/galaxy.hpp>
+#include <universe/galaxy.hpp>
 
-using namespace Galaxy;
+using namespace Universe;
 
 struct TestGalaxy : public ::testing::Test
 {
-    Galaxy::Galaxy galaxy = {"Galaxy1"};
+    Galaxy galaxy = {"Galaxy1"};
 };
 
 TEST_F(TestGalaxy, EmptyOnCreation)

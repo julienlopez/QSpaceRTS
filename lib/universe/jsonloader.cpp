@@ -8,7 +8,7 @@
 
 #include <cassert>
 
-BEGIN_NAMESPACE_GALAXY
+BEGIN_NAMESPACE_UNIVERSE
 
 PlanetarySystem JsonLoader::parseSystem(const std::string& json)
 {
@@ -111,4 +111,4 @@ utils::Point JsonLoader::parsePoint(const QJsonObject& object)
     return utils::Point(x, y);
 }
 
-END_NAMESPACE_GALAXY
+END_NAMESPACE_UNIVERSE

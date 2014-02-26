@@ -9,7 +9,7 @@
 #include <string>
 #include <vector>
 
-BEGIN_NAMESPACE_GALAXY
+BEGIN_NAMESPACE_UNIVERSE
 
 class PlanetarySystem : private utils::noncopiable
 {
@@ -39,6 +39,6 @@ private:
     container_planet m_planets;
 };
 
-END_NAMESPACE_GALAXY
+END_NAMESPACE_UNIVERSE
 
 #endif // PLANETARYSYTEM_HPP

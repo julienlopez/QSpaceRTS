@@ -1,10 +1,10 @@
 #include <gtest/gtest.h>
 
-#include <galaxy/planet.hpp>
-#include <galaxy/jsonloader.hpp>
-#include <galaxy/planetarysystem.hpp>
+#include <universe/planet.hpp>
+#include <universe/jsonloader.hpp>
+#include <universe/planetarysystem.hpp>
 
-using namespace Galaxy;
+using namespace Universe;
 
 TEST(TestGalaxyLoader, LoadPlanet)
 {

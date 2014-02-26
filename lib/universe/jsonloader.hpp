@@ -1,7 +1,7 @@
 #ifndef GALAXYLOADER_HPP
 #define GALAXYLOADER_HPP
 
-#include "namespace_galaxy.hpp"
+#include "namespace_universe.hpp"
 
 #include "utils/noninstantiable.hpp"
 #include "utils/point.hpp"
@@ -10,7 +10,7 @@
 
 class QJsonObject;
 
-BEGIN_NAMESPACE_GALAXY
+BEGIN_NAMESPACE_UNIVERSE
 
 class PlanetarySystem;
 class Planet;
@@ -32,6 +32,6 @@ public:
     static utils::Point parsePoint(const QJsonObject& object);
 };
 
-END_NAMESPACE_GALAXY
+END_NAMESPACE_UNIVERSE
 
 #endif // GALAXYLOADER_HPP

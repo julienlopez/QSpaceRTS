@@ -7,7 +7,7 @@
 
 #include <string>
 
-BEGIN_NAMESPACE_GALAXY
+BEGIN_NAMESPACE_UNIVERSE
 
 class Planet : private utils::noncopiable
 {
@@ -22,6 +22,6 @@ private:
     Orbit m_orbit;
 };
 
-END_NAMESPACE_GALAXY
+END_NAMESPACE_UNIVERSE
 
 #endif // PLANET_HPP
