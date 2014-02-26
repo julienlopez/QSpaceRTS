@@ -17,4 +17,5 @@ MOC_DIR= $$QSPACERTS_MOC_TESTS
 SOURCES += main.cpp \
     galaxy/test_planetarysystem.cpp \
     galaxy/test_planet.cpp \
-    galaxy/test_jsonloader.cpp
+    galaxy/test_jsonloader.cpp \
+    galaxy/test_galaxy.cpp
