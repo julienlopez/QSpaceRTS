@@ -15,10 +15,15 @@ BEGIN_NAMESPACE_UNIVERSE
 class PlanetarySystem;
 class Planet;
 class Orbit;
+class Galaxy;
 
 class JsonLoader : private utils::noninstantiable
 {
 public:
+    static Galaxy parseGalaxy(const std::string& json);
+
+    static Galaxy parseGalaxy(const QJsonObject& object);
+
     static PlanetarySystem parseSystem(const std::string& json);
 
     static PlanetarySystem parseSystem(const QJsonObject& object);

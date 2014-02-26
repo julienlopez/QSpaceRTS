@@ -51,3 +51,8 @@ TEST(TestGalaxyLoader, LoadSystem)
 
     ASSERT_EQ(system.end(), it);
 }
+
+TEST(TestGalaxyLoader, DISABLED_LoadGalaxy)
+{
+    FAIL() << "todo";
+}

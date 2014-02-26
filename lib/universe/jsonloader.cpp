@@ -1,6 +1,7 @@
 #include "jsonloader.hpp"
 #include "planet.hpp"
 #include "planetarysystem.hpp"
+#include "galaxy.hpp"
 
 #include <QJsonArray>
 #include <QJsonDocument>
@@ -9,6 +10,38 @@
 #include <cassert>
 
 BEGIN_NAMESPACE_UNIVERSE
+
+Galaxy JsonLoader::parseGalaxy(const std::string& json)
+{
+    QJsonParseError error;
+    auto doc = QJsonDocument::fromJson(QString::fromStdString(json).toUtf8(), &error);
+    assert(doc.isObject());
+    return parseGalaxy(doc.object());
+}
+
+Galaxy JsonLoader::parseGalaxy(const QJsonObject& object)
+{
+    assert(!object.isEmpty());
+
+    auto it = object.find("name");
+    assert(it != object.end());
+    assert(it.value().isString());
+    std::string name = it.value().toString().toStdString();
+
+    Galaxy galaxy(name);
+
+    it = object.find("systems");
+    assert(it != object.end());
+    assert(it.value().isArray());
+    auto planets = it.value().toArray();
+    for(const auto& p : planets)
+    {
+        assert(p.isObject());
+        galaxy.add(parseSystem(p.toObject()));
+    }
+
+    return galaxy;
+}
 
 PlanetarySystem JsonLoader::parseSystem(const std::string& json)
 {
